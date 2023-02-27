@@ -1,9 +1,10 @@
-.container h1 {
-  color: green;
+.box {
+  background-color: green;
+  font-size: 24px;
 }
 
-.container p {
-  font-size: 24px;
+.row {
+  background-color: blue;
 }
 
 /* Box sizing rules */
