@@ -5,7 +5,7 @@
 	padding: 20px;
 	padding-top: 9px;
 	border-radius: 4px;
-	width: 285px;
+	/* width: 285px; */
 	margin-bottom: 10px;
 	.product__img {
 		position: relative;
@@ -106,7 +106,6 @@
 .product-price {
 	display: flex;
 	align-items: center;
-	margin-bottom: 17px;
 }
 
 .product-price__current {
@@ -128,6 +127,7 @@
 	border-radius: 4px;
 	padding: 14px 0;
 	transition: background-color 0.3s ease-in-out;
+	margin-top: 17px;
 }
 
 .product__btn:hover {

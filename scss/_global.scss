@@ -76,3 +76,38 @@ header {
 		color: #fff;
 	}
 }
+
+.grid-container {
+	width: 100%;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 0 10px;
+}
+
+.products-grid {
+	grid-column: 3 span;
+	display: grid;
+	grid-gap: 15px;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.filters {
+	position: relative;
+}
+
+.filters-price__input {
+	width: 100%;
+}
+
+.absolute {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.fixed {
+	position: fixed;
+	top: 20px;
+	left: 0;
+}
