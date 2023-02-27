@@ -8,13 +8,72 @@
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
 		type="text/css">
+	<link rel="stylesheet" href="https://kit.fontawesome.com/68de43edb0.css" crossorigin="anonymous">
+	<link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 	<title>Online Shop</title>
 </head>
 
 <body>
 	<header>
-
+		<div class=" container">
+			<nav class="nav">
+				<i class="fa-solid fa-bars col-lg-2 col-md-2"></i>
+				<div class="logo col-lg-2 col-md-3">
+					<h1>ONLINE SHOP</h1>
+				</div>
+				<div class="search__bar col-lg-6 col-md-6">
+					<input type="text" placeholder='Пошук товару'>
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</div>
+				<ul class="operations__bar col-lg-2 col-md-2">
+					<li><button><i class="fa-solid fa-user"></i></button></li>
+					<li><button><i class="fa-solid fa-heart"></i></button></li>
+					<li><button><i class="fa-solid fa-cart-shopping"></i></button></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
+
+	<div class="main">
+		<div class="container">
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="img__card col-lg-12 col-md-12 col-xs-12"><img src="img/img1.jpg" alt=""></div>
+					</div>
+					<div class="swiper-slide">
+						<div class="img__card col-lg-12 col-md-12 col-xs-12"><img src="img/img2.jpg" alt=""></div>
+					</div>
+					<div class="swiper-slide">
+						<div class="img__card col-lg-12 col-md-12 col-xs-12"><img src="img/img3.jpg" alt=""></div>
+					</div>
+					<div class="swiper-slide">
+						<div class="img__card col-lg-12 col-md-12 col-xs-12"><img src="img/img4.png" alt=""></div>
+					</div>
+					<div class="swiper-slide">
+						<div class="img__card col-lg-12 col-md-12 col-xs-12"><img src="img/img5.jpg" alt=""></div>
+					</div>
+					<div class="swiper-slide">
+						<div class="img__card col-lg-12 col-md-12 col-xs-12"><img src="img/img6.jpg" alt=""></div>
+					</div>
+					<div class="swiper-slide">
+						<div class="img__card col-lg-12 col-md-12 col-xs-12"><img src="img/img7.jpg" alt=""></div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/68de43edb0.js" crossorigin="anonymous"></script>
+	<script src='js/script.js'></script>
+
 </body>
 
 </html>
