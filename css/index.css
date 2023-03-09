@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 body ul {
   list-style: none;
 }
@@ -30,34 +33,25 @@ header {
 }
 
 .products {
-  margin: 0 10px;
+  margin: 20px 10px;
 }
 .products h2 {
   font-size: 20px;
   margin-bottom: 15px;
   font-weight: 700;
 }
-.products .products__lider {
-  margin-bottom: 20px;
+
+.btn-center {
+  text-align: center;
+  grid-column: 1/4 span;
 }
 
-footer {
-  background-color: #1e434c;
-  color: #fff;
+.grid__item:nth-child(n+5) {
+  display: none;
 }
-footer .container .footer__info {
-  display: flex;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #18343b;
-}
-footer .container .footer__info li {
-  padding: 5px 0;
-}
-footer .container .footer__info a {
-  color: #fff;
-}
-footer .container p {
-  padding: 10px 0;
+
+.grid__item.is-visible {
+  display: block;
 }
 
 * {
@@ -345,6 +339,10 @@ body {
 .nav .search__bar {
   display: flex;
 }
+.nav .search__bar button {
+  color: #fff;
+  background-color: #1e434c;
+}
 .nav .search__bar input {
   width: 70%;
   padding: 5px 10px;
@@ -391,8 +389,76 @@ body {
   transition: box-shadow 0.3s ease-in-out;
 }
 
+footer {
+  background-color: #1e434c;
+  color: #fff;
+}
+footer .container .footer__info {
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #18343b;
+  flex-wrap: wrap;
+}
+footer .container .footer__info .subscription {
+  margin-left: 50px;
+}
+footer .container .footer__info .subscription input {
+  padding: 5px 10px;
+  margin-right: -5px;
+  border-radius: 5px 0 0 5px;
+  border: unset;
+  outline: unset;
+}
+footer .container .footer__info .subscription button {
+  padding: 5px 10px;
+  background-color: #c99e11;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+}
+footer .container .footer__info ul {
+  padding-right: 30%;
+  border-right: 1px solid #18343b;
+}
+footer .container .footer__info ul li {
+  padding: 5px 0;
+}
+footer .container .footer__info ul a {
+  color: #fff;
+}
+footer .container p {
+  padding: 10px 0;
+}
+
 @media screen and (max-width: 576px) {
   .grid-container {
     grid-template-columns: 1fr;
+  }
+  .swiper {
+    height: 50vh;
+  }
+  .nav h1 {
+    display: none;
+  }
+  .nav li:nth-child(n+2) {
+    display: none;
+  }
+  .add__banner {
+    padding: 20px 5px;
+    font-size: 16px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  footer .container .footer__info {
+    margin-left: 5px;
+  }
+  footer .container .footer__info ul {
+    border: unset;
+  }
+  footer .container .footer__info .subscription {
+    text-align: center;
+    margin: 0 auto;
+  }
+  footer .container p {
+    text-align: center;
   }
 }

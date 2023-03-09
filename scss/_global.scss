@@ -18,6 +18,7 @@ body {
 		border: unset;
 		cursor: pointer;
 	}
+	overflow-x: hidden;
 }
 
 header {
@@ -39,34 +40,23 @@ header {
 }
 
 .products {
-	margin: 0 10px;
+	margin: 20px 10px;
 	h2 {
 		font-size: 20px;
 		margin-bottom: 15px;
 		font-weight: 700;
 	}
-	.products__lider {
-		margin-bottom: 20px;
-	}
 }
 
-footer {
-	background-color: $--main-theme-color;
-	color: #fff;
-	.container {
-		.footer__info {
-			display: flex;
-			padding-bottom: 20px;
-			border-bottom: 1px solid #18343b;
-			li {
-				padding: 5px 0;
-			}
-			a {
-				color: #fff;
-			}
-		}
-		p {
-			padding: 10px 0;
-		}
-	}
+.btn-center {
+	text-align: center;
+	grid-column: 1 / 4 span;
+}
+
+.grid__item:nth-child(n + 5) {
+	display: none;
+}
+
+.grid__item.is-visible {
+	display: block;
 }
