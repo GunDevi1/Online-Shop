@@ -48,9 +48,24 @@ header {
 	}
 }
 
-.btn-center {
-	text-align: center;
-	grid-column: 1 / 4 span;
+.btn__show-more {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	.show-more {
+		padding: 10px 30px;
+		background-color: $--details-theme-color;
+		border-radius: 10px;
+		color: #fff;
+		transition: box-shadow 1s ease-in-out;
+		i {
+			font-size: 24px;
+		}
+	}
+}
+
+.show-more:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .grid__item:nth-child(n + 5) {
