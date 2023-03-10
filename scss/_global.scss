@@ -64,6 +64,10 @@ header {
 	}
 }
 
+.none {
+	display: none;
+}
+
 .show-more:hover {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -74,4 +78,19 @@ header {
 
 .grid__item.is-visible {
 	display: block;
+}
+
+.btn {
+	background-color: $--details-theme-color;
+	color: #fff;
+	border-radius: 4px;
+	padding: 14px 0;
+	transition: background-color 0.3s ease-in-out;
+	cursor: pointer;
+	border: none;
+}
+
+.btn:hover {
+	background-color: #e2b623;
+	transition: background-color 0.3s ease-in-out;
 }

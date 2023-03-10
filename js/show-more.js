@@ -1,5 +1,5 @@
 const showMore = document.querySelector('.show-more')
-const productsLength = document.querySelector('.grid__item').length
+const productsLength = document.querySelectorAll('.grid__item').length
 let items = 4
 
 showMore.addEventListener('click', () => {
@@ -13,5 +13,3 @@ showMore.addEventListener('click', () => {
 		showMore.style.display = 'none'
 	}
 })
-
-console.log(productsLength)
